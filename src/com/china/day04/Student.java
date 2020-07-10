@@ -5,10 +5,11 @@ package com.china.day04;
  * @date 2020/7/10 15:54
  */
 public class Student {
-        //    成员变量
-        private  String name;
-        private int age;
-    public Student(String name, int age){
+    //    成员变量
+    private String name;
+    private int age;
+
+    public Student(String name, int age) {
         this.name = name;
         this.age = age;
     }
@@ -30,12 +31,12 @@ public class Student {
     }
 
     //   成员方法
-        public  void study(){
-            System.out.println("good good study， day day up");
-        }
+    public void study() {
+        System.out.println("good good study， day day up");
+    }
 
-        public void eat(){
-            System.out.println("学习饿了要吃饭");
-        }
+    public void eat() {
+        System.out.println("学习饿了要吃饭");
+    }
 
 }

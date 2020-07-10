@@ -26,6 +26,9 @@ package com.china.day04;
  *  格式： 修饰符 构造方法名（参数列表）{
  *      方法体
  *  }
+ *  如果没有定义构造方法，系统会为你创建一个无参的构造方法
+ *  一旦自定义了构造方法， Java就不会提供默认的无参构造方法了
+ *  构造方法名和类名相同， 没有返回值，也不需要void
  *
  *
  *
@@ -34,13 +37,13 @@ public class Demo01 {
     public static void main(String[] args) {
        // 类的使用
         // 类名 对象名 = new 类名();
-        // Student s = new Student(); // 创建了一个 s对象
-        Student s = new Student("马云",44); // 创建了一个 s对象
-        System.out.println(s.getName());
-        System.out.println(s.getAge());
-
-        s.setName("马化腾");
-        System.out.println(s.getName());
+         Student s1 = new Student(); // 创建了一个 s对象
+//        Student s = new Student("马云",44); // 创建了一个 s对象
+//        System.out.println(s.getName());
+//        System.out.println(s.getAge());
+//
+//        s.setName("马化腾");
+//        System.out.println(s.getName());
 
 //        // 对象名.成员变量
 //        System.out.println(s.name); // 默认是null值
