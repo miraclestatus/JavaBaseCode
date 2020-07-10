@@ -6,8 +6,22 @@ package com.china.day04;
  */
 public class Student {
         //    成员变量
-        String name;
-        int age;
+        private  String name;
+        private int age;
+
+        public String getName(){
+            return name;
+        }
+        public void setName(String n){
+            name = n;
+
+        }
+
+
+        
+
+
+
         //   成员方法
         public  void study(){
             System.out.println("good good study， day day up");

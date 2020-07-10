@@ -14,6 +14,9 @@ package com.china.day04;
  *      成员变量
  *      成员方法
  *  }
+ *  2、封装
+ *  成员变量 变为私有 private，外界无法直接访问
+ *  手动编写提供 set、get方法供外部访问
  *
  *
  *
@@ -23,20 +26,25 @@ public class Demo01 {
        // 类的使用
         // 类名 对象名 = new 类名();
         Student s = new Student(); // 创建了一个 s对象
-        // 对象名.成员变量
-        System.out.println(s.name); // 默认是null值
-        System.out.println(s.age); // 默认是0
-        s.name = "石敢当";
-        s.age = 11;
-        System.out.println(s.name); // 默认是null值
-        System.out.println(s.age); // 默认是0
-        s.name = "tfboy";
-        s.age = 17;
-        System.out.println(s.name); // 默认是null值
-        System.out.println(s.age); // 默认是0
-        // 对象名.成员方法();
-        s.eat();
-        s.study();
+//        // 对象名.成员变量
+//        System.out.println(s.name); // 默认是null值
+//        System.out.println(s.age); // 默认是0
+//        s.name = "石敢当";
+//        s.age = 11;
+//        System.out.println(s.name); // 默认是null值
+//        System.out.println(s.age); // 默认是0
+//        s.name = "tfboy";
+//        s.age = 17;
+//        System.out.println(s.name); // 默认是null值
+//        System.out.println(s.age); // 默认是0
+//        // 对象名.成员方法();
+//        s.eat();
+//        s.study();
+//        s.name
+        s.setName("刘德华");
+        System.out.println(s.getName());
+//        s.age = 18;
+//        System.out.println(s.age);
 
     }
 }
