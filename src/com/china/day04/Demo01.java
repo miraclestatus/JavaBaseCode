@@ -17,6 +17,15 @@ package com.china.day04;
  *  2、封装
  *  成员变量 变为私有 private，外界无法直接访问
  *  手动编写提供 set、get方法供外部访问
+ *  this.成员变量名
+ *  this代表所在类的当前对象的引用（地址值）
+ *  即对象自己的引用
+ *  谁在调用，this就代表哪个对象
+ *  3、构造方法
+ *  当一个对象创建后， 构造方法用于初始化该对象，给对象成员变量赋值
+ *  格式： 修饰符 构造方法名（参数列表）{
+ *      方法体
+ *  }
  *
  *
  *
@@ -25,7 +34,14 @@ public class Demo01 {
     public static void main(String[] args) {
        // 类的使用
         // 类名 对象名 = new 类名();
-        Student s = new Student(); // 创建了一个 s对象
+        // Student s = new Student(); // 创建了一个 s对象
+        Student s = new Student("马云",44); // 创建了一个 s对象
+        System.out.println(s.getName());
+        System.out.println(s.getAge());
+
+        s.setName("马化腾");
+        System.out.println(s.getName());
+
 //        // 对象名.成员变量
 //        System.out.println(s.name); // 默认是null值
 //        System.out.println(s.age); // 默认是0
@@ -41,8 +57,8 @@ public class Demo01 {
 //        s.eat();
 //        s.study();
 //        s.name
-        s.setName("刘德华");
-        System.out.println(s.getName());
+//        s.setName("刘德华");
+//        System.out.println(s.getName());
 //        s.age = 18;
 //        System.out.println(s.age);
 
