@@ -9,7 +9,7 @@ public class Student {
         String name;
         int age;
         //   成员方法
-        public void study(){
+        public  void study(){
             System.out.println("good good study， day day up");
         }
 
