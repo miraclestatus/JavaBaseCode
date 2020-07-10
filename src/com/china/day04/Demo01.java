@@ -37,7 +37,7 @@ public class Demo01 {
     public static void main(String[] args) {
        // 类的使用
         // 类名 对象名 = new 类名();
-         Student s1 = new Student(); // 创建了一个 s对象
+//         Student s1 = new Student(); // 创建了一个 s对象
 //        Student s = new Student("马云",44); // 创建了一个 s对象
 //        System.out.println(s.getName());
 //        System.out.println(s.getAge());
