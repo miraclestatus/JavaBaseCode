@@ -12,8 +12,8 @@ public class Demo1 {
         // 被修饰的成员属于类， 而不单单属于某个对象
         // 也就是说既然不属于类，就可以不靠对象来调用
         sayHello();
-        Student student = new Student();
-        student.sayStudentHello();
+//        Student student = new Student();
+//        student.sayStudentHello();
     }
     public static void  sayHello(){
         System.out.println("haha");
