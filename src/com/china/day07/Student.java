@@ -22,4 +22,7 @@ public class Student {
     public void show(){
         System.out.println("Student: name= "+name +", age = "+age+ ", sid = "+sid);
     }
+    public static void showNum(){
+        System.out.println("num:"+ numberOfStudent);
+    }
 }
