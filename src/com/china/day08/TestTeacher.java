@@ -30,6 +30,13 @@ public class TestTeacher {
          *   方法
          *   this.成员方法()  本类的
          *   super.成员方法()  父类的
+         *   继承的特点
+         *   1、JAVA只支持单继承
+         *   一个类只能有一个父类
+         *   2、Java支持多层继承
+         *   顶层父类是Object类， 所有的类默认继承Object类作为父类
+         *   3、子类和父类是一种相对的概念
+         *
          */
         Teacher teacher = new Teacher();
         teacher.name = "小德子";
