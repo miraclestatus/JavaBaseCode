@@ -8,12 +8,12 @@ public class User {
     // 用户名
     private String userName;
     // 余额
-    private double leftMoney;
+    private int leftMoney;
 
     public User() {
     }
 
-    public User(String userName, double leftMoney) {
+    public User(String userName, int leftMoney) {
         this.userName = userName;
         this.leftMoney = leftMoney;
     }
@@ -26,11 +26,11 @@ public class User {
         this.userName = userName;
     }
 
-    public double getLeftMoney() {
+    public int getLeftMoney() {
         return leftMoney;
     }
 
-    public void setLeftMoney(double leftMoney) {
+    public void setLeftMoney(int leftMoney) {
         this.leftMoney = leftMoney;
     }
     // 展示信息的方法

@@ -11,7 +11,7 @@ public class Member extends User {
     public Member() {
     }
 
-    public Member(String userName, double leftMoney) {
+    public Member(String userName, int leftMoney) {
         super(userName, leftMoney);
     }
     // 打开红包
@@ -19,7 +19,7 @@ public class Member extends User {
         Random random = new Random();
         int index = random.nextInt(list.size());
         Integer remove = list.remove(index);
-        double leftMoney = super.getLeftMoney();
+        int leftMoney = super.getLeftMoney();
         super.setLeftMoney(leftMoney + remove);
     }
 

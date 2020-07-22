@@ -10,7 +10,7 @@ public class Manager extends User{
     public Manager() {
     }
 
-    public Manager(String userName, double leftMoney) {
+    public Manager(String userName, int leftMoney) {
         super(userName, leftMoney);
     }
 
@@ -18,7 +18,7 @@ public class Manager extends User{
     public ArrayList<Integer> send(int totalMoney, int count){
         ArrayList<Integer> redList = new ArrayList<>();
         // 看一下群主多少前
-        double leftMoney = super.getLeftMoney();
+        int leftMoney = super.getLeftMoney();
         if (totalMoney > leftMoney){
             System.out.println("余额不足");
         }
