@@ -7,6 +7,10 @@ package com.china.day08;
 public class Employee {
     String name;
     int num =5;
+    Employee(){
+        super(); // 调用父类构造方法
+        System.out.println("Employee Constructor");
+    }
     public void work(){
         System.out.println("努力的工作吧");
     }
