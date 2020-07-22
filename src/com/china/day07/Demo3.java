@@ -5,10 +5,10 @@ package com.china.day07;
  * @date 2020/7/20 20:25
  */
 public class Demo3 {
-//    static {
-//        // 执行语句
-//        // 作用， 给类变量进行初始化赋值
-//    }
+// //        // 执行语句
+////        // 作用， 给类变量进行初始化赋值
+////    }   static {
+
     public static void main(String[] args) {
         // 静态代码代码块
         // 定义在成员位置，使用static修饰的代码块{}
