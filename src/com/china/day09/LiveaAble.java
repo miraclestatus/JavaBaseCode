@@ -13,6 +13,7 @@ public interface LiveaAble {
     // 默认方法， 使用default关键字修饰不可省略， 供子类调用或者子类重写
     public default void method(){
         System.out.println("默认方法");
+        method3();
     }
 
     // 静态方法， 供接口直接调用， 接口名.静态方法名（）
@@ -22,7 +23,7 @@ public interface LiveaAble {
 
     // 私有方法 9以上版本(了解)，供接口中的默认方法调用和静态方法调用
     private void method3(){
-        System.out.println("私有方法");
+        System.out.println("私有方法被调用");
     }
 
 }
