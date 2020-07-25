@@ -1,4 +1,4 @@
-package com.china.day09;
+package com.china.day09.interfaceMethod;
 
 /**
  * @author Eric Lee

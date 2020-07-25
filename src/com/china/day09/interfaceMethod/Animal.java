@@ -1,4 +1,6 @@
-package com.china.day09;
+package com.china.day09.interfaceMethod;
+
+import com.china.day09.interfaceMethod.LiveaAble;
 
 /**
  * @author Eric Lee
