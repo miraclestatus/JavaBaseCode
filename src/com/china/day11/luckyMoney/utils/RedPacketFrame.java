@@ -453,6 +453,14 @@ public abstract class RedPacketFrame extends JFrame {
     // 设置红包的类型
     private OpenMode openWay = null;
 
+    public void setOwnerName(String ownerName) {
+        this.ownerName = ownerName;
+    }
+
+    public void setOpenWay(OpenMode openWay) {
+        this.openWay = openWay;
+    }
+
     // 编写构造方法，用于初始化本类
     public RedPacketFrame(String title){
         super(title);
