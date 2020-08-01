@@ -14,8 +14,10 @@ public class BootStrap {
 
         // 分别调用普通红包策略和 手气红包策略
         // 普通红包
-        NormalMode normalMode = new NormalMode();
-        myRed.setOpenWay(normalMode);
+//        NormalMode normalMode = new NormalMode();
+//        myRed.setOpenWay(normalMode);
         // 手气红包
+        RandomMode randomMode = new RandomMode();
+        myRed.setOpenWay(randomMode);
     }
 }
