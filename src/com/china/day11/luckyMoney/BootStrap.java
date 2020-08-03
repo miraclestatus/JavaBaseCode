@@ -8,9 +8,10 @@ import java.util.Map;
  */
 public class BootStrap {
     public static void main(String[] args) {
-        MyRed myRed = new MyRed("微信红包模拟程序");
+//        MyRed myRed = new MyRed("微信红包模拟程序");
+        MyRed myRed = new MyRed("dd");
         // 设置群主名
-        myRed.setOwnerName("哈利波特");
+//        myRed.setOwnerName("哈利波特");
 
         // 分别调用普通红包策略和 手气红包策略
         // 普通红包
