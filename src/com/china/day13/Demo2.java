@@ -16,7 +16,7 @@ public class Demo2 {
         // 获取指定的日
         int day =  calendar.get(Calendar.DAY_OF_MONTH);
         System.out.println(year  + "年" + month +"月" +day+ "日");
-        // 修改年份
+        // 修改年/月/日份
 //        calendar.set(calendar.YEAR, 2008,11);
         calendar.set(2008, 11, 04);
         // 修改完要重新get一下
@@ -24,7 +24,6 @@ public class Demo2 {
         month = calendar.get(calendar.MONTH);
         day = calendar.get(calendar.DAY_OF_MONTH);
         System.out.println(year  + "年" + month +"月" +day+ "日");
-        // 修改月份
 
 
     }
