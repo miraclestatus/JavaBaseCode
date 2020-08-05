@@ -2,6 +2,8 @@ package com.china.day14;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * @author Eric Lee
@@ -13,15 +15,15 @@ public class Poker {
         // 准备牌， 每张牌有花色和数字组成
         // 使用多态的形式创建扑克盒
         // 创建牌盒， 存储牌
-        Collection<String> pokerBox = new ArrayList<>();
+        List<String> pokerBox = new ArrayList<>();
         // 创建花色集合
-        Collection<String> colors = new ArrayList<>();
+        List<String> colors = new ArrayList<>();
         colors.add("♥");
         colors.add("♦");
         colors.add("♠");
         colors.add("♣");
         // 创建数字集合
-        Collection<String> numbers = new ArrayList<>();
+        List<String> numbers = new ArrayList<>();
         for (int i = 2; i <= 10 ; i++) {
             numbers.add(""+i);
         }
@@ -42,13 +44,22 @@ public class Poker {
 
         System.out.println(pokerBox);
         System.out.println(pokerBox.size());
-
-
-
         // 洗牌
-
-
+        // 可以调用 collections工具类下面有一个shuffe方法
+        Collections.shuffle(pokerBox);
+        System.out.println("洗完牌"+ pokerBox);
         // 发牌
+        // 创建玩家一、玩家二、 玩家三、底牌四个集合，
+        // 将pokebox里面的牌分别发给这四个对象
+        List<String> player1 = new ArrayList<>();
+        List<String> player2 = new ArrayList<>();
+        List<String> player3 = new ArrayList<>();
+        List<String> dipai = new ArrayList<>();
+        // 遍历扑克盒对象然后发牌
+        for (int i = 0; i < pokerBox.size() ; i++) {
+           String card =  pokerBox.get(i);
+            System.out.println(card);
+        }
 
 
         // 将发放的所有牌进行展示
