@@ -58,10 +58,22 @@ public class Poker {
         // 遍历扑克盒对象然后发牌
         for (int i = 0; i < pokerBox.size() ; i++) {
            String card =  pokerBox.get(i);
-            System.out.println(card);
+           // 根据i的值进行判断发牌
+            if (i >=51){
+                // 留给底牌
+                dipai.add(card);
+            } else if (i%3==0){
+                player1.add(card);
+            }else if (i%3==1){
+                player2.add(card);
+            }else {
+                player3.add(card);
+            }
         }
-
-
         // 将发放的所有牌进行展示
+        System.out.println("玩家1"+player1);
+        System.out.println("玩家2"+player2);
+        System.out.println("玩家3"+player3);
+        System.out.println("底牌是" + dipai);
     }
 }
