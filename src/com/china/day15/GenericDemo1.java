@@ -21,10 +21,13 @@ public class GenericDemo1 {
         // 只能存储 String类型的数据
         list.add("abc");
         list.add("def");
+//        list.add(12);
         list.add("12");
+
         // 明确了存储的类型， 我们就可以在使用譬如迭代器这样的方法，可以自动推断返回值类型
         Iterator<String> iterator = list.iterator();
 
-
+        // 修饰符  class 类名<代表泛型的变量>{
+        //}
     }
 }
