@@ -1,9 +1,6 @@
 package com.china.jdbc;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 /**
  * @author Eric Lee
@@ -19,18 +16,47 @@ public class JDBCDemo5 {
         // 获取执行sql 的对象 Statement
         Statement stmt = conn.createStatement();
         // 定义sql
-        String sql = "delete from dept where deptno=80";
-        // 执行sql   count 是受影响的行数
-        int count = stmt.executeUpdate(sql);
+        String sql = "select  *  from emp";
+        // 执行查询的时候返回一个ResultSet对象
+        // 这个结果集对象 是一个集合我们需要遍历它
+        ResultSet rs = stmt.executeQuery(sql);
+        while (rs.next()){
+            int empno = rs.getInt(1);
+            String ename = rs.getString(2);
+            String job = rs.getString(3);
+            int mgr = rs.getInt(4);
+            Date date = rs.getDate(5);
+            int sal = rs.getInt(6);
+            int comm = rs.getInt(7);
+            int deptno = rs.getInt(8);
 
-        if (count >0 ){
-            System.out.println("删除成功！");
-        }else {
-            System.out.println("删除失败！");
+            System.out.print(empno);
+            System.out.print("\t");
+            System.out.print(ename);
+            System.out.print("\t");
+            System.out.print(mgr);
+            System.out.print("\t");
+            System.out.print(date);
+            System.out.print("\t");
+            System.out.print(sal);
+            System.out.print("\t");
+            System.out.print(deptno);
+            System.out.print("\t");
+            System.out.print(comm);
+            System.out.print(job);
+
+            System.out.println();
         }
+
+
+
+
+
+
         // 释放资源
         stmt.close();
         conn.close();
+        rs.close();
 //
 
     }
